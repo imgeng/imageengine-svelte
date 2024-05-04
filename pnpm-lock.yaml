@@ -28,8 +28,8 @@ importers:
         specifier: ^6.4.2
         version: 6.4.2(vitest@1.5.0(@vitest/ui@1.5.0)(jsdom@24.0.0))
       '@testing-library/svelte':
-        specifier: ^4.1.0
-        version: 4.2.3(svelte@4.2.15)
+        specifier: ^5.0.0
+        version: 5.1.0(svelte@4.2.15)(vite@5.2.10)(vitest@1.5.0(@vitest/ui@1.5.0)(jsdom@24.0.0))
       '@vitest/coverage-v8':
         specifier: ^1.4.0
         version: 1.5.0(vitest@1.5.0(@vitest/ui@1.5.0)(jsdom@24.0.0))
@@ -428,11 +428,18 @@ packages:
       vitest:
         optional: true
 
-  '@testing-library/svelte@4.2.3':
-    resolution: {integrity: sha512-8vM2+JSPc6wZWkO9ICPmHvzacjy8jBw+iVjmNs+0VsPV3AO3v4P8qCLWTaQ9nYW/e+IR1BCy3MM3Uqg21dlBkw==}
+  '@testing-library/svelte@5.1.0':
+    resolution: {integrity: sha512-8GW+rBR72U7Qql0Glxl4CtVTr6GPotYf/MB7MamIH6ZpV45i7IJIOm3oHWH4Wr6ZULdUs37F9recegQygLbC0g==}
     engines: {node: '>= 10'}
     peerDependencies:
       svelte: ^3 || ^4 || ^5
+      vite: '*'
+      vitest: '*'
+    peerDependenciesMeta:
+      vite:
+        optional: true
+      vitest:
+        optional: true
 
   '@types/aria-query@5.0.4':
     resolution: {integrity: sha512-rfT93uj5s0PRL7EzccGMs3brplhcrghnDoV26NqKhCAS1hVo+WdNsPvE/yb6ilfr5hi2MEk6d5EWJTKdxg8jVw==}
@@ -1904,10 +1911,13 @@ snapshots:
     optionalDependencies:
       vitest: 1.5.0(@vitest/ui@1.5.0)(jsdom@24.0.0)
 
-  '@testing-library/svelte@4.2.3(svelte@4.2.15)':
+  '@testing-library/svelte@5.1.0(svelte@4.2.15)(vite@5.2.10)(vitest@1.5.0(@vitest/ui@1.5.0)(jsdom@24.0.0))':
     dependencies:
       '@testing-library/dom': 9.3.4
       svelte: 4.2.15
+    optionalDependencies:
+      vite: 5.2.10
+      vitest: 1.5.0(@vitest/ui@1.5.0)(jsdom@24.0.0)
 
   '@types/aria-query@5.0.4': {}
 
