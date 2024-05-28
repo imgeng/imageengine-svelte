@@ -1,7 +1,7 @@
 import { render,screen } from '@testing-library/svelte';
 import { describe, it, expect, vi } from 'vitest';
 import Image from '../Image.svelte';
-import * as utilsModule from '../../utils/index.ts'; 
+import * as utilsModule from '../../utils/index.js'; 
 
 describe('Image Component', () => {
   it('renders an image with the expected source', async () => {

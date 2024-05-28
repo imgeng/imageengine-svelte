@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/svelte';
 import { describe, it, expect, vi } from 'vitest';
 import Source from '../Source.svelte';
-import * as utilsModule from '../../utils/index.ts';
+import * as utilsModule from '../../utils/index.js';
 
 describe('Source Component', () => {
   it('Check src attribute', async () => {
