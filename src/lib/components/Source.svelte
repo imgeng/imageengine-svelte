@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { useImageEngineContext, generateSrcSetString } from "../utils/index.ts";
+    import { useImageEngineContext, generateSrcSetString } from "../utils/index";  
     import type { TSourceProps } from '../types.ts'; 
     import { preprocess } from "svelte/compiler";
 

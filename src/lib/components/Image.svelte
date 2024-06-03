@@ -1,8 +1,8 @@
 <script lang="ts">
-    import { useImageEngineContext } from "../utils/index.js";
-    import { constructUrl, generateSrcSetString } from "../utils/index.js"
-    import type { IEDirectives, IEFormat } from "@imageengine/imageengine-helpers";
-    import type { TSrcSet,TImageProps } from "../types.ts";
+    import { useImageEngineContext } from "../utils/index";
+    import { constructUrl, generateSrcSetString } from "../utils/index"
+    import type { IEFormat } from "@imageengine/imageengine-helpers";
+    import type { TImageProps } from "../types";
 
   const ALLOWED_INPUT_EXTENSIONS: (IEFormat | 'tif')[] = [
   "png",
