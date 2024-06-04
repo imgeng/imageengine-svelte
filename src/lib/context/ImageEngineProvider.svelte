@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { TImageEngineProvider } from '$lib/types.js';
+	import type { TImageEngineProvider } from '$lib/types';
 
 	import { setContext } from 'svelte';
-	import { Key } from '../utils/index.js';
+	import { Key } from '../utils/index';
 
 	export let deliveryAddress: TImageEngineProvider['deliveryAddress'] = '';
 	export let stripFromSrc: TImageEngineProvider['stripFromSrc'] = null;
