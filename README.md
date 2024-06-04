@@ -1,58 +1,94 @@
-# create-svelte
+# ImageEngine Svelte
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Seamlessly integrate optimized responsive images in your Svelte applications using ImageEngine Svelte components.
 
-Read more about creating a library [in the docs](https://kit.svelte.dev/docs/packaging).
+## Quick Start
 
-## Creating a project
+The package includes four components:
 
-If you're seeing this, you've probably already done this step. Congrats!
+- `ImageEngineProvider`
+- `Image`
+- `Picture`
+- `Source`
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+To start using these components, place `ImageEngineProvider` above them in the DOM tree with the `deliveryAddress` prop set:
 
-# create a new project in my-app
-npm create svelte@latest my-app
+```svelte
+<script>
+  import { ImageEngineProvider } from "@imageengine/svelte";
+</script>
+
+<ImageEngineProvider deliveryAddress="https://blazing-fast-pics.cdn.imgeng.in">
+  <YourComponent />
+</ImageEngineProvider>
 ```
 
-## Developing
+### Example Usage
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```svelte
+<script>
+  import { Image } from "@imageengine/svelte";
+</script>
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+<section>
+  <Image
+    src="pick-ups/custom/unstoppable.jpg"
+    srcSet={...}
+    sizes={...}
+    directives={...}
+    {...otherProps}
+  />
+</section>
 ```
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+## Component Props Reference
 
-## Building
+### `ImageEngineProvider`
 
-To build your library:
+- `deliveryAddress`: ImageEngine Delivery Address.
+  - Type: `string`
+- `stripFromSrc`: Optionally strip a portion of the source string in all ImageEngine components.
+  - Type: `string?`
 
-```bash
-npm run package
-```
+### `Image`
 
-To create a production version of your showcase app:
+- `src`: Relative path to the image.
+  - Type: `string`
+- `directives`: ImageEngine directives for optimization.
+  - Type: `object?`
+  - Properties:
+    - `width`: Define desired width.
+    - `autoWidthWithFallback`: Set width to auto (with fallback).
+    - `height`: Define desired height.
+    - `compression`: Adjust compression.
+    - `outputFormat`: Define desired output format.
+    - `fitMethod`: Define desired fit method.
+    - `noOptimization`: Don't apply any optimizations to the origin image.
+    - `sharpness`: Adjust sharpness.
+    - `rotate`: Define rotation.
+    - `scaleToScreenWidth`: Use WURFL to calculate screen's width and then scale the image accordingly.
+    - `crop`: Crop the image [width, height, left, top].
+    - `inline`: Convert the image into a data url.
+    - `keepMeta`: Keep EXIF data.
+    - `force_download`: Force download of the image.
+    - `max_device_pixel_ratio`: Maximum device pixel ratio.
+- `srcSet`: List of image variations for the image source set.
+  - Type: `array?`
+  - Properties:
+    - `src`: Relative path to the image.
+    - `width`: Width descriptor.
+    - `directives`: Custom optimization instructions.
 
-```bash
-npm run build
-```
+### `Picture`
 
-You can preview the production build with `npm run preview`.
+This component wraps image components to provide a responsive container.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+### `Source`
 
-## Publishing
+- `srcSet`: List of image variations for the image source set.
+  - Type: `array`
+  - Properties:
+    - `src`: Relative path to the image.
+    - `width`: Width descriptor.
+    - `directives`: Custom optimization instructions.
 
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```bash
-npm publish
-```
