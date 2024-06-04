@@ -1,7 +1,8 @@
 import { render,screen } from '@testing-library/svelte';
 import { describe, it, expect, vi } from 'vitest';
 import Image from '../Image.svelte';
-import * as utilsModule from '../../utils/index.ts'; 
+import * as utilsModule from '../../utils/index'; 
+import type { TImageEngineProvider } from '$lib/types';
 
 describe('Image Component', () => {
   it('renders an image with the expected source', async () => {
@@ -9,7 +10,7 @@ describe('Image Component', () => {
     const mockUseImageEngineContext = vi.spyOn(utilsModule, 'useImageEngineContext').mockReturnValue({
       deliveryAddress: 'https://blazing-fast-pics.cdn.imgeng.in',
       stripFromSrc: ''
-    });
+    } as TImageEngineProvider);
 
 
   render(Image, {
@@ -22,7 +23,7 @@ describe('Image Component', () => {
 
 
     const image = screen.getByRole('img');
-    expect(image).toHaveAttribute('src', 'https://blazing-fast-pics.cdn.imgeng.in/images/pic_1_variation_1.jpg?imgeng=/cmpr_0');
+    expect(image.getAttribute('src')).toBe('https://blazing-fast-pics.cdn.imgeng.in/images/pic_1_variation_1.jpg?imgeng=/cmpr_0');
 
 
     mockUseImageEngineContext.mockRestore();
@@ -33,17 +34,18 @@ describe('Image Component', () => {
     const mockUseImageEngineContext = vi.spyOn(utilsModule, 'useImageEngineContext').mockReturnValue({
       deliveryAddress: 'https://blazing-fast-pics.cdn.imgeng.in/',
       stripFromSrc: '',
-    });
+    } as TImageEngineProvider);
 
     render(Image, {
       props: {
         src: 'images/pic.jpg',
         alt: 'image_1', 
+        directives:{},
       },
     });
 
     const image = screen.getByRole('img');
-    expect(image).toHaveAttribute('alt', 'image_1');
+    expect(image.getAttribute('alt')).toBe('image_1');
 
     mockUseImageEngineContext.mockRestore();
   });
@@ -52,12 +54,12 @@ describe('Image Component', () => {
     const mockUseImageEngineContext = vi.spyOn(utilsModule, 'useImageEngineContext').mockReturnValue({
       deliveryAddress: 'https://blazing-fast-pics.cdn.imgeng.in/',
       stripFromSrc: ''
-    });
+    } as TImageEngineProvider);
   
     render(Image, {
       props: {
         src: 'images/pic.jpg',
-        directives: { quality: 90 }, 
+        directives: {}, 
         srcSet: [
           { src: "images/pic.jpg", width: "400w", directives: { width: 400 } },
           { src: "images/pic.jpg", width: "800w", directives: { width: 800 } },

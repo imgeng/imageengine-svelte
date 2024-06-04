@@ -5,6 +5,6 @@ import Picture from '../Picture.svelte';
 describe('Picture Component', () => {
   it('renders correctly', () => {
     const { container } = render(Picture);
-    expect(container.querySelector('picture')).toBeInTheDocument();
+    expect(container.querySelector('picture')).toBeTruthy();
   });
 });
