@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: 21
           registry-url: "https://registry.npmjs.org"
+      - run: npm install -g pnpm
       - run: pnpm ci
       - run: pnpm run build
       - run: pnpm publish --access public
