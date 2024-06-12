@@ -1,4 +1,4 @@
-name: "build the package when a pull request is opened"
+name: "Build the package when for push and pull to main"
 
 on:
   push:
@@ -15,5 +15,5 @@ jobs:
         with:
           node-version: 21
       - run: npm install -g pnpm
-      - run: pnpm ci
+      - run: pnpm install --frozen-lockfile
       - run: pnpm run build
