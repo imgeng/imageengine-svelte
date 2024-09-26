@@ -29,16 +29,16 @@ importers:
         version: 6.5.0
       '@testing-library/svelte':
         specifier: ^5.0.0
-        version: 5.2.1(svelte@4.2.18)(vite@5.2.13)(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@24.1.1))
+        version: 5.2.1(svelte@4.2.18)(vite@5.2.13)(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.0))
       '@vitest/coverage-v8':
         specifier: ^2.0.0
-        version: 2.1.1(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@24.1.1))
+        version: 2.1.1(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.0))
       '@vitest/ui':
         specifier: ^2.0.0
         version: 2.1.1(vitest@2.1.1)
       jsdom:
-        specifier: ^24.0.0
-        version: 24.1.1
+        specifier: ^25.0.0
+        version: 25.0.0
       publint:
         specifier: ^0.2.0
         version: 0.2.9
@@ -59,7 +59,7 @@ importers:
         version: 5.2.13
       vitest:
         specifier: ^2.0.0
-        version: 2.1.1(@vitest/ui@2.1.1)(jsdom@24.1.1)
+        version: 2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.0)
 
 packages:
 
@@ -641,15 +641,6 @@ packages:
     resolution: {integrity: sha512-ZYP5VBHshaDAiVZxjbRVcFJpc+4xGgT0bK3vzy1HLN8jTO975HEbuYzZJcHoQEY5K1a0z8YayJkyVETa08eNTg==}
     engines: {node: '>=18'}
 
-  debug@4.3.5:
-    resolution: {integrity: sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==}
-    engines: {node: '>=6.0'}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
-
   debug@4.3.7:
     resolution: {integrity: sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==}
     engines: {node: '>=6.0'}
@@ -895,8 +886,8 @@ packages:
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
-  jsdom@24.1.1:
-    resolution: {integrity: sha512-5O1wWV99Jhq4DV7rCLIoZ/UIhyQeDR7wHVyZAHAshbrvZsLs+Xzz7gtwnlJTJDjleiTKh54F4dXrX70vJQTyJQ==}
+  jsdom@25.0.0:
+    resolution: {integrity: sha512-OhoFVT59T7aEq75TVw9xxEfkXgacpqAhQaYgP9y/fDqWQCMB/b1H66RfmPm/MaeaAIU9nDwMOVTlPN51+ao6CQ==}
     engines: {node: '>=18'}
     peerDependencies:
       canvas: ^2.11.2
@@ -992,9 +983,6 @@ packages:
   mrmime@2.0.0:
     resolution: {integrity: sha512-eu38+hdgojoyq63s+yTpN4XMBdt5l8HhMhc4VKLO9KM5caLIBvUm4thi7fFaxyTmCKeNnXZ5pAlBwCUnhA09uw==}
     engines: {node: '>=10'}
-
-  ms@2.1.2:
-    resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
 
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
@@ -1771,13 +1759,13 @@ snapshots:
       lodash: 4.17.21
       redent: 3.0.0
 
-  '@testing-library/svelte@5.2.1(svelte@4.2.18)(vite@5.2.13)(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@24.1.1))':
+  '@testing-library/svelte@5.2.1(svelte@4.2.18)(vite@5.2.13)(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.0))':
     dependencies:
       '@testing-library/dom': 10.4.0
       svelte: 4.2.18
     optionalDependencies:
       vite: 5.2.13
-      vitest: 2.1.1(@vitest/ui@2.1.1)(jsdom@24.1.1)
+      vitest: 2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.0)
 
   '@types/aria-query@5.0.4': {}
 
@@ -1787,7 +1775,7 @@ snapshots:
 
   '@types/pug@2.0.10': {}
 
-  '@vitest/coverage-v8@2.1.1(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@24.1.1))':
+  '@vitest/coverage-v8@2.1.1(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.0))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 0.2.3
@@ -1801,7 +1789,7 @@ snapshots:
       std-env: 3.7.0
       test-exclude: 7.0.1
       tinyrainbow: 1.2.0
-      vitest: 2.1.1(@vitest/ui@2.1.1)(jsdom@24.1.1)
+      vitest: 2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -1848,7 +1836,7 @@ snapshots:
       sirv: 2.0.4
       tinyglobby: 0.2.6
       tinyrainbow: 1.2.0
-      vitest: 2.1.1(@vitest/ui@2.1.1)(jsdom@24.1.1)
+      vitest: 2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.0)
 
   '@vitest/utils@2.1.1':
     dependencies:
@@ -1860,7 +1848,7 @@ snapshots:
 
   agent-base@7.1.1:
     dependencies:
-      debug: 4.3.5
+      debug: 4.3.7
     transitivePeerDependencies:
       - supports-color
 
@@ -2009,10 +1997,6 @@ snapshots:
     dependencies:
       whatwg-mimetype: 4.0.0
       whatwg-url: 14.0.0
-
-  debug@4.3.5:
-    dependencies:
-      ms: 2.1.2
 
   debug@4.3.7:
     dependencies:
@@ -2173,14 +2157,14 @@ snapshots:
   http-proxy-agent@7.0.2:
     dependencies:
       agent-base: 7.1.1
-      debug: 4.3.5
+      debug: 4.3.7
     transitivePeerDependencies:
       - supports-color
 
   https-proxy-agent@7.0.5:
     dependencies:
       agent-base: 7.1.1
-      debug: 4.3.5
+      debug: 4.3.7
     transitivePeerDependencies:
       - supports-color
 
@@ -2259,7 +2243,7 @@ snapshots:
 
   js-tokens@4.0.0: {}
 
-  jsdom@24.1.1:
+  jsdom@25.0.0:
     dependencies:
       cssstyle: 4.0.1
       data-urls: 5.0.0
@@ -2363,8 +2347,6 @@ snapshots:
   mri@1.2.0: {}
 
   mrmime@2.0.0: {}
-
-  ms@2.1.2: {}
 
   ms@2.1.3: {}
 
@@ -2747,7 +2729,7 @@ snapshots:
     optionalDependencies:
       vite: 5.2.13
 
-  vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@24.1.1):
+  vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.0):
     dependencies:
       '@vitest/expect': 2.1.1
       '@vitest/mocker': 2.1.1(@vitest/spy@2.1.1)(vite@5.2.13)
@@ -2770,7 +2752,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@vitest/ui': 2.1.1(vitest@2.1.1)
-      jsdom: 24.1.1
+      jsdom: 25.0.0
     transitivePeerDependencies:
       - less
       - lightningcss
