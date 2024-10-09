@@ -14,10 +14,10 @@ importers:
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^3.0.0
-        version: 3.2.5(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.18)(vite@5.2.13))(svelte@4.2.18)(vite@5.2.13))
+        version: 3.2.5(@sveltejs/kit@2.6.4(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.18)(vite@5.2.13))(svelte@4.2.18)(vite@5.2.13))
       '@sveltejs/kit':
-        specifier: ^2.0.0
-        version: 2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.18)(vite@5.2.13))(svelte@4.2.18)(vite@5.2.13)
+        specifier: ^2.6.4
+        version: 2.6.4(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.18)(vite@5.2.13))(svelte@4.2.18)(vite@5.2.13)
       '@sveltejs/package':
         specifier: ^2.0.0
         version: 2.3.2(svelte@4.2.18)(typescript@5.6.2)
@@ -29,10 +29,10 @@ importers:
         version: 6.5.0
       '@testing-library/svelte':
         specifier: ^5.0.0
-        version: 5.2.1(svelte@4.2.18)(vite@5.2.13)(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.0))
+        version: 5.2.1(svelte@4.2.18)(vite@5.2.13)(vitest@2.1.1)
       '@vitest/coverage-v8':
         specifier: ^2.0.0
-        version: 2.1.1(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.0))
+        version: 2.1.1(vitest@2.1.1)
       '@vitest/ui':
         specifier: ^2.0.0
         version: 2.1.1(vitest@2.1.1)
@@ -368,8 +368,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
-  '@sveltejs/kit@2.5.28':
-    resolution: {integrity: sha512-/O7pvFGBsQPcFa9UrW8eUC5uHTOXLsUp3SN0dY6YmRAL9nfPSrJsSJk//j5vMpinSshzUjteAFcfQTU+04Ka1w==}
+  '@sveltejs/kit@2.6.4':
+    resolution: {integrity: sha512-qfcbyWw35cy6k9sQ1GUkhuE5qj+PgPKJx3/Aa3+veooWgN0DXZXqMS2PDgpgKDXRIFj6V1KWmMZYYPOhL45lXg==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -643,8 +643,8 @@ packages:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
     engines: {node: '>=6'}
 
-  devalue@5.0.0:
-    resolution: {integrity: sha512-gO+/OMXF7488D+u3ue+G7Y4AA3ZmUnB3eHJXmBTgNHvr4ZNzl36A0ZtG+XCRNYCkYx/bFmw4qtkoFLa+wSrwAA==}
+  devalue@5.1.1:
+    resolution: {integrity: sha512-maua5KUiapvEwiEAe+XnlZ3Rh0GD+qI1J/nb9vrJc3muPXvcF/8gXYTWF76+5DAqHyDUtOIImEuo0YKE9mshVw==}
 
   dom-accessibility-api@0.5.16:
     resolution: {integrity: sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg==}
@@ -1528,17 +1528,17 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.18.0':
     optional: true
 
-  '@sveltejs/adapter-auto@3.2.5(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.18)(vite@5.2.13))(svelte@4.2.18)(vite@5.2.13))':
+  '@sveltejs/adapter-auto@3.2.5(@sveltejs/kit@2.6.4(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.18)(vite@5.2.13))(svelte@4.2.18)(vite@5.2.13))':
     dependencies:
-      '@sveltejs/kit': 2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.18)(vite@5.2.13))(svelte@4.2.18)(vite@5.2.13)
+      '@sveltejs/kit': 2.6.4(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.18)(vite@5.2.13))(svelte@4.2.18)(vite@5.2.13)
       import-meta-resolve: 4.1.0
 
-  '@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.18)(vite@5.2.13))(svelte@4.2.18)(vite@5.2.13)':
+  '@sveltejs/kit@2.6.4(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.18)(vite@5.2.13))(svelte@4.2.18)(vite@5.2.13)':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.1.2(svelte@4.2.18)(vite@5.2.13)
       '@types/cookie': 0.6.0
       cookie: 0.6.0
-      devalue: 5.0.0
+      devalue: 5.1.1
       esm-env: 1.0.0
       import-meta-resolve: 4.1.0
       kleur: 4.1.5
@@ -1606,7 +1606,7 @@ snapshots:
       lodash: 4.17.21
       redent: 3.0.0
 
-  '@testing-library/svelte@5.2.1(svelte@4.2.18)(vite@5.2.13)(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.0))':
+  '@testing-library/svelte@5.2.1(svelte@4.2.18)(vite@5.2.13)(vitest@2.1.1)':
     dependencies:
       '@testing-library/dom': 10.4.0
       svelte: 4.2.18
@@ -1620,7 +1620,7 @@ snapshots:
 
   '@types/estree@1.0.5': {}
 
-  '@vitest/coverage-v8@2.1.1(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.0))':
+  '@vitest/coverage-v8@2.1.1(vitest@2.1.1)':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 0.2.3
@@ -1848,7 +1848,7 @@ snapshots:
 
   dequal@2.0.3: {}
 
-  devalue@5.0.0: {}
+  devalue@5.1.1: {}
 
   dom-accessibility-api@0.5.16: {}
 
