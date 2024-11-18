@@ -91,4 +91,3 @@ This component wraps image components to provide a responsive container.
     - `src`: Relative path to the image.
     - `width`: Width descriptor.
     - `directives`: Custom optimization instructions.
-
