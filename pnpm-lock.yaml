@@ -29,15 +29,15 @@ importers:
         version: 6.5.0
       '@testing-library/svelte':
         specifier: ^5.0.0
-        version: 5.2.1(svelte@5.0.0)(vite@5.4.11)(vitest@2.1.1)
+        version: 5.2.1(svelte@5.0.0)(vite@5.4.11)(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.1))
       '@vitest/coverage-v8':
         specifier: ^2.0.0
-        version: 2.1.1(vitest@2.1.1)
+        version: 2.1.1(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.1))
       '@vitest/ui':
         specifier: ^2.0.0
         version: 2.1.1(vitest@2.1.1)
       jsdom:
-        specifier: ^25.0.1
+        specifier: ^25.0.0
         version: 25.0.1
       publint:
         specifier: ^0.2.0
@@ -1619,7 +1619,7 @@ snapshots:
       lodash: 4.17.21
       redent: 3.0.0
 
-  '@testing-library/svelte@5.2.1(svelte@5.0.0)(vite@5.4.11)(vitest@2.1.1)':
+  '@testing-library/svelte@5.2.1(svelte@5.0.0)(vite@5.4.11)(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.1))':
     dependencies:
       '@testing-library/dom': 10.4.0
       svelte: 5.0.0
@@ -1635,7 +1635,7 @@ snapshots:
 
   '@types/estree@1.0.6': {}
 
-  '@vitest/coverage-v8@2.1.1(vitest@2.1.1)':
+  '@vitest/coverage-v8@2.1.1(vitest@2.1.1(@vitest/ui@2.1.1)(jsdom@25.0.1))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 0.2.3
