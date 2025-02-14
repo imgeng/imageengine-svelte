@@ -28,7 +28,7 @@ importers:
         specifier: ^6.4.2
         version: 6.6.3
       '@testing-library/svelte':
-        specifier: ^5.2.7
+        specifier: ^5.0.0
         version: 5.2.7(svelte@5.19.9)(vite@6.1.0)(vitest@3.0.5)
       '@vitest/coverage-v8':
         specifier: ^3.0.0
@@ -40,8 +40,8 @@ importers:
         specifier: ^26.0.0
         version: 26.0.0
       publint:
-        specifier: ^0.3.0
-        version: 0.3.4
+        specifier: ^0.3.5
+        version: 0.3.5
       svelte:
         specifier: ^5.0.0
         version: 5.19.9
@@ -952,8 +952,8 @@ packages:
     resolution: {integrity: sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
 
-  publint@0.3.4:
-    resolution: {integrity: sha512-szQCgQXxLgrI2P+3Znv/KUiglp3YA+A2MeI+9Izjs01Ol5KXKCkdbmz69bM/ivPKMYKHhtKOKkib9VJ6JL3H/w==}
+  publint@0.3.5:
+    resolution: {integrity: sha512-/84pl/T/emCA5hHmNYqsE/x0Voikg278QmFwNiORYqnZgqeII2HSZ+aAGs4frfDpOCQlU1SAgYloz8ayJGMbIg==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -2067,7 +2067,7 @@ snapshots:
       ansi-styles: 5.2.0
       react-is: 17.0.2
 
-  publint@0.3.4:
+  publint@0.3.5:
     dependencies:
       '@publint/pack': 0.1.1
       package-manager-detector: 0.2.9
