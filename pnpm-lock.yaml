@@ -19,7 +19,7 @@ importers:
         specifier: ^2.16.0
         version: 2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.26.2)(vite@6.2.6))(svelte@5.26.2)(vite@6.2.6)
       '@sveltejs/package':
-        specifier: ^2.3.11
+        specifier: ^2.0.0
         version: 2.3.11(svelte@5.26.2)(typescript@5.8.3)
       '@sveltejs/vite-plugin-svelte':
         specifier: ^5.0.3
@@ -40,8 +40,8 @@ importers:
         specifier: ^26.0.0
         version: 26.1.0
       publint:
-        specifier: ^0.3.0
-        version: 0.3.11
+        specifier: ^0.3.12
+        version: 0.3.12
       svelte:
         specifier: ^5.0.0
         version: 5.26.2
@@ -879,8 +879,8 @@ packages:
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
 
-  package-manager-detector@1.1.0:
-    resolution: {integrity: sha512-Y8f9qUlBzW8qauJjd/eu6jlpJZsuPJm2ZAV0cDVd420o4EdpH5RPdoCv+60/TdJflGatr4sDfpAL6ArWZbM5tA==}
+  package-manager-detector@1.2.0:
+    resolution: {integrity: sha512-PutJepsOtsqVfUsxCzgTTpyXmiAgvKptIgY4th5eq5UXXFhj5PxfQ9hnGkypMeovpAvVshFRItoFHYO18TCOqA==}
 
   parse5@7.2.1:
     resolution: {integrity: sha512-BuBYQYlv1ckiPdQi/ohiivi9Sagc9JG+Ozs0r7b/0iK3sKmrb0b9FdWdBbOdx6hBCM/F9Ir82ofnBhtZOjCRPQ==}
@@ -918,8 +918,8 @@ packages:
     resolution: {integrity: sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
 
-  publint@0.3.11:
-    resolution: {integrity: sha512-snArkBXO8Sl1Nlnqr3Y3DCT9CzNw8QxzlFXZ6nRkyEPEUGPRg25lM4IjNQyIyp3vRwpsZ24EEexmKSIZdVMizA==}
+  publint@0.3.12:
+    resolution: {integrity: sha512-1w3MMtL9iotBjm1mmXtG3Nk06wnq9UhGNRpQ2j6n1Zq7YAD6gnxMMZMIxlRPAydVjVbjSm+n0lhwqsD1m4LD5w==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1965,7 +1965,7 @@ snapshots:
 
   package-json-from-dist@1.0.1: {}
 
-  package-manager-detector@1.1.0: {}
+  package-manager-detector@1.2.0: {}
 
   parse5@7.2.1:
     dependencies:
@@ -2003,10 +2003,10 @@ snapshots:
       ansi-styles: 5.2.0
       react-is: 17.0.2
 
-  publint@0.3.11:
+  publint@0.3.12:
     dependencies:
       '@publint/pack': 0.1.2
-      package-manager-detector: 1.1.0
+      package-manager-detector: 1.2.0
       picocolors: 1.1.1
       sade: 1.8.1
 
