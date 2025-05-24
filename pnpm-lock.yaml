@@ -31,10 +31,10 @@ importers:
         specifier: ^5.0.0
         version: 5.2.8(svelte@5.33.1)(vite@6.3.5)(vitest@3.1.4)
       '@vitest/coverage-v8':
-        specifier: ^3.1.4
+        specifier: ^3.0.0
         version: 3.1.4(vitest@3.1.4)
       '@vitest/ui':
-        specifier: ^3.1.4
+        specifier: ^3.0.0
         version: 3.1.4(vitest@3.1.4)
       jsdom:
         specifier: ^26.0.0
@@ -43,7 +43,7 @@ importers:
         specifier: ^0.3.0
         version: 0.3.12
       svelte:
-        specifier: ^5.0.0
+        specifier: ^5.33.1
         version: 5.33.1
       svelte-check:
         specifier: ^4.0.0
@@ -58,7 +58,7 @@ importers:
         specifier: ^6.0.7
         version: 6.3.5
       vitest:
-        specifier: ^3.1.4
+        specifier: ^3.0.0
         version: 3.1.4(@vitest/ui@3.1.4)(jsdom@26.1.0)
 
 packages:
