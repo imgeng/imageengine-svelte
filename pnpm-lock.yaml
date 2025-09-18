@@ -16,11 +16,11 @@ importers:
         specifier: ^6.0.0
         version: 6.1.0(@sveltejs/kit@2.41.0(@sveltejs/vite-plugin-svelte@6.2.0(svelte@5.38.10)(vite@7.1.5))(svelte@5.38.10)(vite@7.1.5))
       '@sveltejs/kit':
-        specifier: ^2.41.0
+        specifier: ^2.16.0
         version: 2.41.0(@sveltejs/vite-plugin-svelte@6.2.0(svelte@5.38.10)(vite@7.1.5))(svelte@5.38.10)(vite@7.1.5)
       '@sveltejs/package':
-        specifier: ^2.0.0
-        version: 2.5.1(svelte@5.38.10)(typescript@5.9.2)
+        specifier: ^2.5.2
+        version: 2.5.2(svelte@5.38.10)(typescript@5.9.2)
       '@sveltejs/vite-plugin-svelte':
         specifier: ^6.0.0
         version: 6.2.0(svelte@5.38.10)(vite@7.1.5)
@@ -461,8 +461,8 @@ packages:
       '@opentelemetry/api':
         optional: true
 
-  '@sveltejs/package@2.5.1':
-    resolution: {integrity: sha512-n0XRW7H7rD2AbdDsTD1KjXBztU96eMMuxPYwL9C+ZS8H8M1mS5NgmqFaSe8wKR40RU1KjLsqSWMnzsxRfG2j+A==}
+  '@sveltejs/package@2.5.2':
+    resolution: {integrity: sha512-9zhPSxHKQ3xm6q/QFsZmZPI9Q8V53prJXA4BXWEo5p92DUQ6NB7QWa0X8xGOoZO3ee3yckTsuMMjtS/58EMHWw==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     peerDependencies:
@@ -1563,7 +1563,7 @@ snapshots:
       svelte: 5.38.10
       vite: 7.1.5
 
-  '@sveltejs/package@2.5.1(svelte@5.38.10)(typescript@5.9.2)':
+  '@sveltejs/package@2.5.2(svelte@5.38.10)(typescript@5.9.2)':
     dependencies:
       chokidar: 4.0.3
       kleur: 4.1.5
