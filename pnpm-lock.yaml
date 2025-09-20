@@ -19,8 +19,8 @@ importers:
         specifier: ^2.16.0
         version: 2.41.0(@sveltejs/vite-plugin-svelte@6.2.0(svelte@5.39.2)(vite@7.1.5))(svelte@5.39.2)(vite@7.1.5)
       '@sveltejs/package':
-        specifier: ^2.0.0
-        version: 2.5.2(svelte@5.39.2)(typescript@5.9.2)
+        specifier: ^2.5.3
+        version: 2.5.3(svelte@5.39.2)(typescript@5.9.2)
       '@sveltejs/vite-plugin-svelte':
         specifier: ^6.0.0
         version: 6.2.0(svelte@5.39.2)(vite@7.1.5)
@@ -40,7 +40,7 @@ importers:
         specifier: ^27.0.0
         version: 27.0.0(postcss@8.5.6)
       publint:
-        specifier: ^0.3.13
+        specifier: ^0.3.0
         version: 0.3.13
       svelte:
         specifier: ^5.0.0
@@ -473,8 +473,8 @@ packages:
       '@opentelemetry/api':
         optional: true
 
-  '@sveltejs/package@2.5.2':
-    resolution: {integrity: sha512-9zhPSxHKQ3xm6q/QFsZmZPI9Q8V53prJXA4BXWEo5p92DUQ6NB7QWa0X8xGOoZO3ee3yckTsuMMjtS/58EMHWw==}
+  '@sveltejs/package@2.5.3':
+    resolution: {integrity: sha512-E8trf3nQRDsBoiUz52zc219M0lYnr/Sn/l7q3ZKQ90z9iYhwD/BufJPXb78t45n2Kqc+HfN6e0eN79pd1wKCSA==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     peerDependencies:
@@ -1603,7 +1603,7 @@ snapshots:
       svelte: 5.39.2
       vite: 7.1.5
 
-  '@sveltejs/package@2.5.2(svelte@5.39.2)(typescript@5.9.2)':
+  '@sveltejs/package@2.5.3(svelte@5.39.2)(typescript@5.9.2)':
     dependencies:
       chokidar: 4.0.3
       kleur: 4.1.5
