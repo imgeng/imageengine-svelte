@@ -28,8 +28,8 @@ importers:
         specifier: ^6.4.2
         version: 6.9.1
       '@testing-library/svelte':
-        specifier: ^5.0.0
-        version: 5.2.10(svelte@5.46.0)(vite@7.3.0)(vitest@4.0.16)
+        specifier: ^5.3.0
+        version: 5.3.0(svelte@5.46.0)(vite@7.3.0)(vitest@4.0.16)
       '@vitest/coverage-v8':
         specifier: ^4.0.0
         version: 4.0.16(vitest@4.0.16)
@@ -46,7 +46,7 @@ importers:
         specifier: ^5.0.0
         version: 5.46.0
       svelte-check:
-        specifier: ^4.3.5
+        specifier: ^4.0.0
         version: 4.3.5(picomatch@4.0.3)(svelte@5.46.0)(typescript@5.9.3)
       tslib:
         specifier: ^2.4.1
@@ -492,8 +492,14 @@ packages:
     resolution: {integrity: sha512-zIcONa+hVtVSSep9UT3jZ5rizo2BsxgyDYU7WFD5eICBE7no3881HGeb/QkGfsJs6JTkY1aQhT7rIPC7e+0nnA==}
     engines: {node: '>=14', npm: '>=6', yarn: '>=1'}
 
-  '@testing-library/svelte@5.2.10':
-    resolution: {integrity: sha512-siiR6FknvRN0Tt4m8mf0ejvahSRi3/n10Awyns0R7huMCNBHSrSzzXa//hJqhtEstZ7b2ZZMZwuYhcD0BIk/bA==}
+  '@testing-library/svelte-core@1.0.0':
+    resolution: {integrity: sha512-VkUePoLV6oOYwSUvX6ShA8KLnJqZiYMIbP2JW2t0GLWLkJxKGvuH5qrrZBV/X7cXFnLGuFQEC7RheYiZOW68KQ==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      svelte: ^3 || ^4 || ^5 || ^5.0.0-next.0
+
+  '@testing-library/svelte@5.3.0':
+    resolution: {integrity: sha512-N1b+OAZNF34iMmtTbj5TyE0Ff+NJ/Mp6E483qOIeyzRUKOTcj2N5jEEl56RJeNq5jeQ4kZp/oMA0hCybXydrtQ==}
     engines: {node: '>= 10'}
     peerDependencies:
       svelte: ^3 || ^4 || ^5 || ^5.0.0-next.0
@@ -1453,9 +1459,14 @@ snapshots:
       picocolors: 1.1.1
       redent: 3.0.0
 
-  '@testing-library/svelte@5.2.10(svelte@5.46.0)(vite@7.3.0)(vitest@4.0.16)':
+  '@testing-library/svelte-core@1.0.0(svelte@5.46.0)':
+    dependencies:
+      svelte: 5.46.0
+
+  '@testing-library/svelte@5.3.0(svelte@5.46.0)(vite@7.3.0)(vitest@4.0.16)':
     dependencies:
       '@testing-library/dom': 10.4.1
+      '@testing-library/svelte-core': 1.0.0(svelte@5.46.0)
       svelte: 5.46.0
     optionalDependencies:
       vite: 7.3.0
