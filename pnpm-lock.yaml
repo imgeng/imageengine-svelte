@@ -14,10 +14,10 @@ importers:
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^7.0.0
-        version: 7.0.1(@sveltejs/kit@2.58.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.0))(vite@7.3.2))(svelte@5.55.5(@typescript-eslint/types@8.58.0))(typescript@6.0.3)(vite@7.3.2))
+        version: 7.0.1(@sveltejs/kit@2.59.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.0))(vite@7.3.2))(svelte@5.55.5(@typescript-eslint/types@8.58.0))(typescript@6.0.3)(vite@7.3.2))
       '@sveltejs/kit':
-        specifier: ^2.16.0
-        version: 2.58.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.0))(vite@7.3.2))(svelte@5.55.5(@typescript-eslint/types@8.58.0))(typescript@6.0.3)(vite@7.3.2)
+        specifier: ^2.59.0
+        version: 2.59.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.0))(vite@7.3.2))(svelte@5.55.5(@typescript-eslint/types@8.58.0))(typescript@6.0.3)(vite@7.3.2)
       '@sveltejs/package':
         specifier: ^2.0.0
         version: 2.5.7(svelte@5.55.5(@typescript-eslint/types@8.58.0))(typescript@6.0.3)
@@ -46,7 +46,7 @@ importers:
         specifier: ^5.0.0
         version: 5.55.5(@typescript-eslint/types@8.58.0)
       svelte-check:
-        specifier: ^4.4.7
+        specifier: ^4.0.0
         version: 4.4.7(picomatch@4.0.4)(svelte@5.55.5(@typescript-eslint/types@8.58.0))(typescript@6.0.3)
       tslib:
         specifier: ^2.4.1
@@ -492,8 +492,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
-  '@sveltejs/kit@2.58.0':
-    resolution: {integrity: sha512-kT9GCN8yJTkCK1W+Gi/bvGooWAM7y7WXP+yd+rf6QOIjyoK1ERPrMwSufXJUNu2pMWIqruhFvmz+LbOqsEmKmA==}
+  '@sveltejs/kit@2.59.0':
+    resolution: {integrity: sha512-WeJaGKvDf3uVQB4bnDHhM+BXCY34LC1v0HiPqnSpvNkjB54r8DAUP1rpk73s+5zprIirEKtUcVfgh6+fPODjzQ==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -710,6 +710,9 @@ packages:
 
   devalue@5.7.1:
     resolution: {integrity: sha512-MUbZ586EgQqdRnC4yDrlod3BEdyvE4TapGYHMW2CiaW+KkkFmWEFqBUaLltEZCGi0iFXCEjRF0OjF0DV2QHjOA==}
+
+  devalue@5.8.0:
+    resolution: {integrity: sha512-2zA9pFEsnp7vWBZbXF5JAgAq0fsUIt/1XPbRiAmRV3lp/2C3upzH+sADiyy66aFCihoLEsrQHxNM5w1gIDfsBg==}
 
   dom-accessibility-api@0.5.16:
     resolution: {integrity: sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg==}
@@ -1421,11 +1424,11 @@ snapshots:
     dependencies:
       acorn: 8.16.0
 
-  '@sveltejs/adapter-auto@7.0.1(@sveltejs/kit@2.58.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.0))(vite@7.3.2))(svelte@5.55.5(@typescript-eslint/types@8.58.0))(typescript@6.0.3)(vite@7.3.2))':
+  '@sveltejs/adapter-auto@7.0.1(@sveltejs/kit@2.59.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.0))(vite@7.3.2))(svelte@5.55.5(@typescript-eslint/types@8.58.0))(typescript@6.0.3)(vite@7.3.2))':
     dependencies:
-      '@sveltejs/kit': 2.58.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.0))(vite@7.3.2))(svelte@5.55.5(@typescript-eslint/types@8.58.0))(typescript@6.0.3)(vite@7.3.2)
+      '@sveltejs/kit': 2.59.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.0))(vite@7.3.2))(svelte@5.55.5(@typescript-eslint/types@8.58.0))(typescript@6.0.3)(vite@7.3.2)
 
-  '@sveltejs/kit@2.58.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.0))(vite@7.3.2))(svelte@5.55.5(@typescript-eslint/types@8.58.0))(typescript@6.0.3)(vite@7.3.2)':
+  '@sveltejs/kit@2.59.0(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.55.5(@typescript-eslint/types@8.58.0))(vite@7.3.2))(svelte@5.55.5(@typescript-eslint/types@8.58.0))(typescript@6.0.3)(vite@7.3.2)':
     dependencies:
       '@standard-schema/spec': 1.1.0
       '@sveltejs/acorn-typescript': 1.0.9(acorn@8.16.0)
@@ -1433,7 +1436,7 @@ snapshots:
       '@types/cookie': 0.6.0
       acorn: 8.16.0
       cookie: 0.6.0
-      devalue: 5.7.1
+      devalue: 5.8.0
       esm-env: 1.2.2
       kleur: 4.1.5
       magic-string: 0.30.21
@@ -1657,6 +1660,8 @@ snapshots:
   dequal@2.0.3: {}
 
   devalue@5.7.1: {}
+
+  devalue@5.8.0: {}
 
   dom-accessibility-api@0.5.16: {}
 
